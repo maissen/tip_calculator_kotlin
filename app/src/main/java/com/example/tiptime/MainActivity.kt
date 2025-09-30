@@ -73,6 +73,17 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+
+@Composable
+fun EditNumberField(modifier: Modifier = Modifier) {
+    TextField(
+        value="some text here",
+        onValueChange= {},
+        modifier = modifier
+    )
+}
+
+
 @Composable
 fun TipTimeTheme() {
 
