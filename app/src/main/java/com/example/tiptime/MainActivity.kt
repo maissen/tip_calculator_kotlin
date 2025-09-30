@@ -62,8 +62,13 @@ fun TipTimeTheme() {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalAlignment = Arrangement.center
     ) {
-
+        Text(
+            text = "Calculate tip",
+        )
         EditNumberField(modifier = Modifier.padding(bottom = 32.dp).fillMaxWidth())
+        Text(
+            text = "Tip Amount: 0.0$",
+        )
     }
 }
 
