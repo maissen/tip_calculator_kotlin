@@ -53,6 +53,18 @@ fun EditNumberField(modifier: Modifier = Modifier) {
 
 @Composable
 fun TipTimeTheme() {
+    Column(
+        modifier = Modifier
+            .statusBarPadding()
+            .padding(horizontal = 40.dp)
+            .verticalScroll(rememberScrollState())
+            .safeDrawingPadding(),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalAlignment = Arrangement.center
+    ) {
+
+        EditNumberField(modifier = Modifier.padding(bottom = 32.dp).fillMaxWidth())
+    }
 }
 
 private fun calculateTip(amount: Double, tipPercent: Double = 15.0, roundUp: Boolean): String {
